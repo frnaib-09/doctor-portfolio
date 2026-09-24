@@ -3,9 +3,9 @@ import NavLeft from '../components/NavLeft'
 import NavMiddle from '../components/NavMiddle'
 import NavEnd from '../components/NavEnd'
 
-const Navbar = () => {
+const Navbar = ({className}) => {
   return (
-    <nav className="flex items-center justify-between py-2 lg:py-6.25 px-10 lg:px-20 bg-secondary fixed w-full top-0 left-0 border-b border-[#e5e1d8] z-50">
+    <nav className={`flex items-center justify-between py-2 lg:py-6.25 px-10 lg:px-20 bg-secondary fixed w-full top-0 left-0 border-b border-[#e5e1d8] z-50 ${className}`}>
       <NavLeft />
       <NavMiddle />
       <NavEnd />

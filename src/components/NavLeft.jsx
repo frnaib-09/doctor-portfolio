@@ -3,9 +3,9 @@ import { LiaHeartbeatSolid } from "react-icons/lia";
 
 
 
-const NavLeft = () => {
+const NavLeft = ({className}) => {
   return (
-    <div className="flex items-center gap-3 {}">
+    <div className={`flex items-center gap-3 ${className}`}>
       <span className="bg-primary w-9 h-9 flex justify-center items-center rounded-[18px]">
         <LiaHeartbeatSolid className="w-6 h-6 text-secondary"></LiaHeartbeatSolid>
       </span>
