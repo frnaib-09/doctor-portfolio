@@ -1,12 +1,14 @@
 import React from 'react'
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
+
 
 const NavEnd = () => {
   return (
-    <div>
-        <a className='flex items-center gap-4' href="#">Book Appointment <FaArrowRightLong /></a>
+    <div className='hidden lg:block'>
+      <a
+        className="primary_btn" href="#">Book Appointment <FaArrowRight /></a>
     </div>
-  )
+  );
 }
 
 export default NavEnd

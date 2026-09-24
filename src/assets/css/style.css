@@ -1,3 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 @import "tailwindcss";
+
+@theme {
+    --font-primary:"Instrument Sans", sans-serif;
+    --font-secondary: "Lora", sans-serif;
+    --color-primary: #0A1C3A;
+    --color-secondary: #fff;
+    --color-third: #5C6470;
+    --color-fourth: #E5ECE9;
+    --color-fifth: #FAF7F2;
+}
+
+.primary_btn {
+    @apply flex items-center gap-2 py-3.5 px-7 bg-primary rounded-[30px] font-primary font-semibold text-sm text-secondary hover:bg-transparent border-2 border-transparent hover:border-primary hover:text-primary duration-150 ease-in;
+}
