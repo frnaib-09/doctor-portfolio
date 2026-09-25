@@ -15,3 +15,19 @@
 .primary_btn {
     @apply flex items-center gap-2 py-3.5 px-7 bg-primary rounded-[30px] font-primary font-semibold text-sm text-secondary hover:bg-transparent border-2 border-transparent hover:border-primary hover:text-primary duration-150 ease-in;
 }
+
+.secondary_btn {
+    @apply relative inline-flex lg:flex items-center gap-2 font-primary font-medium text-base text-primary hover:font-semibold after:absolute after:content-[''] after:h-0.75 after:w-0 hover:after:w-full after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-150 after:ease-in-out pointer-events-auto;
+}
+
+.SummaryCard {
+    @apply text-center;
+
+    h1 {
+        @apply font-secondary font-bold text-[40px] text-primary mb-2;
+    }
+    
+    p {
+        @apply font-primary font-semibold text-sm uppercase text-third;
+    }
+}

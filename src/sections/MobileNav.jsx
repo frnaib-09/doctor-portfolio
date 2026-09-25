@@ -6,8 +6,7 @@ const MobileNav = ({ className }) => {
   const [open, setOpen] = useState(false);
   return (
     <div
-      className={`fixed w-full mx-auto top-0 ${className} left-0 z-50 bg-secondary py-4 px-4`}
-    >
+      className={`fixed w-full mx-auto top-0 ${className} left-0 z-50 bg-secondary py-4 px-4`}>
       <div className="grid grid-cols-12 w-full">
         <NavLeft className="col-span-9"></NavLeft>
         <button

@@ -5,7 +5,7 @@ import { LuPhone } from "react-icons/lu";
 
 const Banner = () => {
   return (
-    <section className="relative h-full overflow-hidden bg-fifth mb-12 lg:mb-25 pb-25">
+    <section className="relative h-full overflow-hidden bg-fifth pb-38">
       <div className="mt-25">
         <div className="absolute inset-0 z-0 w-full h-full">
           <WebThreads
@@ -55,7 +55,7 @@ const Banner = () => {
                   Schedule a Consultation <FaArrowRight />
                 </a>
                 <a
-                  className="relative flex items-center gap-2 font-primary font-medium text-base text-primary hover:font-semibold after:absolute after:content-[''] after:h-0.75 after:w-0 hover:after:w-full after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-150 after:ease-in-out pointer-events-auto"
+                  className="secondary_btn"
                   href="#"
                 >
                   <LuPhone />
