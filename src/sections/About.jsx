@@ -4,7 +4,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 const About = () => {
   return (
     <div>
-        <div className="grid grid-cols-12 gap-10 lg:gap-24 py-20 lg:py-30 px-10 lg:px-20 items-center">
+        <div className="grid grid-cols-12 gap-10 lg:gap-24 py-20 lg:py-30 px-4 lg:px-20 items-center">
             <div className="lg:col-span-4 col-span-12 flex justify-center items-center">
                 <img src="/images/doc.jpg" alt="" className='rounded-tl-[30px] lg:rounded-tl-[100px] rounded-br-[30px] lg:rounded-br-[100px] w-full max-w-[80%] lg:max-w-none h-auto' />
             </div>

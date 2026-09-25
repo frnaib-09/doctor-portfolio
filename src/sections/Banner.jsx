@@ -5,7 +5,7 @@ import { LuPhone } from "react-icons/lu";
 
 const Banner = () => {
   return (
-    <section className="relative h-full overflow-hidden bg-fifth pb-38">
+    <section className="relative min-h-screen overflow-hidden bg-fifth">
       <div className="mt-25">
         <div className="absolute inset-0 z-0 w-full h-full">
           <WebThreads
@@ -30,6 +30,7 @@ const Banner = () => {
             grainIntensity={0.05}
             mouseInteraction
             mouseStrength={1}
+            className="w-full h-full"
           />
         </div>
         <div className="banner relative z-10 h-full flex items-center justify-center pointer-events-none">
