@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <section className="relative min-h-screen overflow-hidden bg-fifth">
       <div className="mt-25">
-        <div className="absolute inset-0 z-0 w-full h-full">
+        <div className="absolute inset-0 z-0 min-w-full min-h-full">
           <WebThreads
             color1="#6B6258"
             color2="#292524"
@@ -30,7 +30,6 @@ const Banner = () => {
             grainIntensity={0.05}
             mouseInteraction
             mouseStrength={1}
-            className="w-full h-full"
           />
         </div>
         <div className="banner relative z-10 h-full flex items-center justify-center pointer-events-none">

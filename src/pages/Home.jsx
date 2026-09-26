@@ -5,6 +5,8 @@ import MobileNav  from '../sections/MobileNav'
 import Summary from '../sections/Summary'
 import About from '../sections/About'
 import Specialities from '../sections/Specialities'
+import Reviews from '../sections/Reviews'
+import Contact from '../sections/Contact'
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <Summary />
       <About />
       <Specialities />
+      <Reviews />
+      <Contact />
     </div>
   )
 }
