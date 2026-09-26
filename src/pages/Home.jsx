@@ -4,6 +4,7 @@ import Banner from '../sections/Banner'
 import MobileNav  from '../sections/MobileNav'
 import Summary from '../sections/Summary'
 import About from '../sections/About'
+import Specialities from '../sections/Specialities'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Banner />
       <Summary />
       <About />
+      <Specialities />
     </div>
   )
 }

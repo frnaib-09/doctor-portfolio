@@ -13,7 +13,7 @@
 }
 
 .primary_btn {
-    @apply flex items-center gap-2 py-3.5 px-7 bg-primary rounded-[30px] font-primary font-semibold text-sm text-secondary hover:bg-transparent border-2 border-transparent hover:border-primary hover:text-primary duration-150 ease-in;
+    @apply flex lg:inline-flex items-center gap-2 py-3.5 px-7 bg-primary rounded-[30px] font-primary font-semibold text-sm text-secondary hover:bg-transparent border-2 border-transparent hover:border-primary hover:text-primary duration-150 ease-in;
 }
 
 .secondary_btn {
@@ -30,4 +30,16 @@
     p {
         @apply font-primary font-semibold text-sm uppercase text-third;
     }
+}
+
+.head_title {
+    @apply bg-fourth py-1.5 px-4 rounded-[100px] inline font-primary font-semibold text-xs uppercase text-primary;
+}
+
+.head_exp {
+    @apply mt-8 font-secondary font-normal text-4xl leading-[130%] text-primary;
+}
+
+.cards .shade:hover {
+    box-shadow: 0 8px 24px 0 rgba(10, 28, 58, 0.04);
 }
