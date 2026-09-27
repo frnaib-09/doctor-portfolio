@@ -27,7 +27,22 @@ const Contact = () => {
             adTag={"Phone"}
             detail={"(555) 234-5678"}
           />
-          <Contcard icon={<MdOutlineEmail />} adTag={"Email"} detail={"contact@drgomezcardiology.com"} />
+          <Contcard
+            icon={<MdOutlineEmail />}
+            adTag={"Email"}
+            detail={"contact@drgomezcardiology.com"}
+          />
+        </div>
+        <div className="col-span-6 right mx-auto">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6469363.433718248!2d-125.24675970611752!3d37.65228693806403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809012a3d1bc8f27%3A0x4fa33e6cc0d5d0bc!2sSan%20Joaquin%20General%20Hospital!5e0!3m2!1sen!2sbd!4v1790532963847!5m2!1sen!2sbd"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
