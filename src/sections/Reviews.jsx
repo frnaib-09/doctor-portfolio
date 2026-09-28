@@ -1,13 +1,14 @@
 import React from 'react'
 import Review from '../components/Review';
+import Head from '../components/Head'
 
 const Reviews = () => {
   return (
     <div className="py-15 lg:py-30 px-10 lg:px-20 bg-secondary">
-      <div className="head text-center mb-14">
-        <h6 className="head_title mb-4">Patient Stories</h6>
-        <h1 className="head_exp mt-4">What Patients Say About Dr. Gomez</h1>
-      </div>
+      <Head className="text-center mb-14"
+        headtitle={"Patient Stories"}
+        headexp={"What Patients Say About Dr. Gomez"}
+      />
       <div className="grid grid-cols-12 gap-6">
         <Review
           cmt={

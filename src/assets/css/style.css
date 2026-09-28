@@ -40,6 +40,26 @@
     @apply mt-8 font-secondary font-normal text-4xl leading-[130%] text-primary;
 }
 
+.head_pragraph {
+    @apply mt-4 font-primary font-normal text-base text-center text-third;
+}
+
 .cards .shade:hover {
     box-shadow: 0 8px 24px 0 rgba(10, 28, 58, 0.04);
+}
+
+.shortInt {
+    @apply p-6 bg-fifth rounded-2xl mt-6;
+
+    h3 {
+        @apply font-secondary font-bold text-[22px] text-primary mb-2;
+    }
+
+    span {
+        @apply font-primary font-semibold text-sm uppercase text-third mb-2;
+    }
+
+    p {
+        @apply font-primary font-normal text-sm leading-[150%] text-third;
+    }
 }
