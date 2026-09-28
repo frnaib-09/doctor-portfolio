@@ -6,10 +6,24 @@ import { GrInstagram } from "react-icons/gr";
 
 
 const Footer = () => {
+  const navPoints = [
+    {name: "Home",
+      url: "#"
+    },
+    {name: "About",
+      url: "#"
+    },
+    {name: "Skills",
+      url: "#"
+    },
+    {name: "Testimonials",
+      url: "#"
+    },
+  ]
   return (
-    <div className="pt-20 pb-10 px-20 bg-primary">
-      <div className="grid grid-cols-12 items-center">
-        <div className="col-span-6 justify-between items-center">
+    <div className="pt-10 lg:pt-20 pb-5 lg:pb-10 px-10 lg:px-20 bg-primary">
+      <div className="grid grid-cols-12 items-center mb-16">
+        <div className="col-span-12 lg:col-span-6 justify-between items-center mb-8 lg:mb-0">
           <div className="flex items-center gap-3 mb-6">
             <span className="bg-secondary w-9 h-9 flex justify-center items-center rounded-[18px]">
               <LiaHeartbeatSolid className="w-6 h-6 text-primary"></LiaHeartbeatSolid>
@@ -25,43 +39,22 @@ const Footer = () => {
             repellendus quae dolores expedita maiores ratione aperiam ab cum.
           </p>
         </div>
-        <div className="col-span-6 text-start justify-end flex gap-20">
+        <div className="col-span-12 lg:col-span-6 text-start justify-start lg:justify-end flex gap-20">
           <ul className="flex flex-col gap-4">
             <li className="font-primary font-semibold text-sm uppercase text-secondary">
               practice
             </li>
-            <li>
+            {navPoints.map((point, index) => (
+              <li key={index}>
               <a
-                className="font-primary font-normal text-base text-secondary opacity-[0.8]"
-                href="#"
+                className="font-primary font-normal text-base text-secondary opacity-[0.8] hover:opacity-100 duration-200 ease-in"
+                href="{point.url}"
               >
-                Home
+                {point.name}
               </a>
             </li>
-            <li>
-              <a
-                className="font-primary font-normal text-base text-secondary opacity-[0.8]"
-                href="#"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                className="font-primary font-normal text-base text-secondary opacity-[0.8]"
-                href="#"
-              >
-                Skills
-              </a>
-            </li>
-            <li>
-              <a
-                className="font-primary font-normal text-base text-secondary opacity-[0.8]"
-                href="#"
-              >
-                Testimonials
-              </a>
-            </li>
+            ))}
+            
           </ul>
           <ul className='flex flex-col gap-4'>
             <li className="font-primary font-semibold text-sm uppercase text-secondary">
@@ -85,6 +78,16 @@ const Footer = () => {
                 </li>
             </div>
           </ul>
+        </div>
+      </div>
+      <hr className='text-third mb-8' />
+      <div className="grid grid-cols-12 items-center justify-between">
+        <div className="col-span-12 lg:col-span-6 justify-center">
+            <p className='text-secondary opacity-[0.5]'>&copy; 2026 Dr. Elena Gomez. All rights reserved.</p>
+        </div>
+        <div className="col-span-12 lg:col-span-6 flex justify-center lg:justify-end gap-6">
+          <a href='#' className='text-secondary opacity-[0.5] hover:opacity-100 duration-200 ease-in'>Privacy Policy</a>
+          <a href='#' className='text-secondary opacity-[0.5] hover:opacity-100 duration-200 ease-in'>Terms of Service</a>
         </div>
       </div>
     </div>
