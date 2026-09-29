@@ -4,6 +4,7 @@ import MobileNav from '../sections/MobileNav';
 import Heading from '../components/Heading';
 import Specialities from '../sections/Specialities';
 import Credentials from '../sections/Credentials';
+import Learning from '../sections/Learning';
 
 const Skills = () => {
   return (
@@ -16,6 +17,7 @@ const Skills = () => {
       />
       <Specialities />
       <Credentials />
+      <Learning />
     </div>
   );
 }
