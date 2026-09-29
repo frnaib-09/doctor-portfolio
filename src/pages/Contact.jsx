@@ -1,13 +1,10 @@
 import React from 'react'
-import Navbar from '../sections/Navbar'
+import Navbar from '../sections/Navbar';
 import MobileNav from '../sections/MobileNav';
 import Heading from '../components/Heading';
-import Specialities from '../sections/Specialities';
-import Credentials from '../sections/Credentials';
-import Learning from '../sections/Learning';
-import Footer from '../sections/Footer'
+import Footer from '../sections/Footer';
 
-const Skills = () => {
+const Contact = () => {
   return (
     <div>
       <Navbar className="hidden lg:flex" />
@@ -16,12 +13,9 @@ const Skills = () => {
         className="mt-25 py-12 px-20 font-secondary font-bold text-[42px]"
         headline={"Skills & Certifications"}
       />
-      <Specialities />
-      <Credentials />
-      <Learning />
       <Footer />
     </div>
   );
 }
 
-export default Skills
+export default Contact

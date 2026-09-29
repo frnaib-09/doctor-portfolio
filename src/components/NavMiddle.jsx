@@ -6,7 +6,7 @@ const NavMiddle = () => {
     { title: "Home", url: "/" },
     { title: "About", url: "/about" },
     { title: "Skills", url: "/skills" },
-    { title: "Testimonials", url: "/testimonial" },
+    { title: "Testimonials", url: "/testimonials" },
     { title: "Contact", url: "/contact" },
   ]
 

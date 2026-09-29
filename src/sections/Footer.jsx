@@ -47,7 +47,7 @@ const Footer = () => {
             {navPoints.map((point, index) => (
               <li key={index}>
               <a
-                className="font-primary font-normal text-base text-secondary opacity-[0.8] hover:opacity-100 duration-200 ease-in"
+                className="font-primary font-normal text-base text-secondary opacity-[0.6] hover:opacity-100 duration-200 ease-in"
                 href="{point.url}"
               >
                 {point.name}
@@ -60,20 +60,20 @@ const Footer = () => {
             <li className="font-primary font-semibold text-sm uppercase text-secondary">
               social
             </li>
-            <div className="flex gap-6">
+            <div className="flex flex-col lg:flex-row gap-6">
                 <li>
                   <a href="#">
-                    <FaLinkedin className='text-3xl text-secondary opacity-[0.8] hover:opacity-100 duration-200 ease-in' />
+                    <FaLinkedin className='text-3xl text-secondary opacity-[0.6] hover:opacity-100 duration-200 ease-in' />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <FaResearchgate className='text-3xl text-secondary opacity-[0.8] hover:opacity-100 duration-200 ease-in' />
+                    <FaResearchgate className='text-3xl text-secondary opacity-[0.6] hover:opacity-100 duration-200 ease-in' />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <GrInstagram className='text-3xl text-secondary opacity-[0.8] hover:opacity-100 duration-200 ease-in' />
+                    <GrInstagram className='text-3xl text-secondary opacity-[0.6] hover:opacity-100 duration-200 ease-in' />
                   </a>
                 </li>
             </div>
