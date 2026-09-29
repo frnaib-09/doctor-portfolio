@@ -4,9 +4,9 @@ import { GrLocation } from "react-icons/gr";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 
-const Contact = () => {
+const Contact = ({className}) => {
   return (
-    <div className="py-15 lg:py-30 px-10 lg:px-20 bg-fifth">
+    <div className={`py-15 lg:py-30 px-10 lg:px-20 bg-fifth ${className}`}>
       <div className="grid grid-cols-12 justify-between">
         <div className="col-span-12 lg:col-span-6 left">
           <h6 className="head_title">Visit Me</h6>

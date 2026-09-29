@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const NavMiddle = () => {
+const NavMiddle = ({className}) => {
   const navItems = [
     { title: "Home", url: "/" },
     { title: "About", url: "/about" },
@@ -11,8 +11,8 @@ const NavMiddle = () => {
   ]
 
   return (
-    <div>
-      <ul className="lg:flex gap-10 hidden">
+    <div className={`${className}`}>
+      <ul className="flex flex-col lg:flex-row gap-10">
         {navItems.map((item, index) => (
           <li key={index}>
             <NavLink

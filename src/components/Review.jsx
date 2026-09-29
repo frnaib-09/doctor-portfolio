@@ -1,9 +1,9 @@
 import React from 'react'
 import { FaRegStar } from "react-icons/fa";
 
-const Review = ({cmt, author, type}) => {
+const Review = ({cmt, author, type, className}) => {
   return (
-    <div className="col-span-12 lg:col-span-4 p-4 lg:p-8 border border-[#e5e1d8] rounded-2xl">
+    <div className={`col-span-12 lg:col-span-4 p-4 lg:p-8 border border-[#e5e1d8] rounded-2xl ${className}`}>
       <div className="stars flex items-center gap-1 mb-6">
         <FaRegStar className="text-lg text-[#D4AF37]" />
         <FaRegStar className="text-lg text-[#D4AF37]" />
