@@ -3,7 +3,7 @@ import Navbar from '../sections/Navbar'
 import MobileNav from '../sections/MobileNav';
 import Heading from '../components/Heading';
 import Specialities from '../sections/Specialities';
-import Credentials from '../components/Credentials';
+import Credentials from '../sections/Credentials';
 
 const Skills = () => {
   return (

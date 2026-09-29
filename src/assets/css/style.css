@@ -41,10 +41,10 @@
 }
 
 .head_pragraph {
-    @apply mt-4 font-primary font-normal text-base text-center text-third;
+    @apply mt-4 font-primary font-normal text-base text-third;
 }
 
-.cards .shade:hover {
+.shade:hover {
     box-shadow: 0 8px 24px 0 rgba(10, 28, 58, 0.04);
 }
 
