@@ -23,7 +23,7 @@ const Testimonials = () => {
         className="mt-25 py-12 px-20 font-secondary font-bold text-[42px]"
         headline={"Patient Testimonials"}
       />
-      <div className="grid grid-cols-12 items-start gap-16 py-15 lg:py-30 px-10 lg:px-20">
+      <div className="grid grid-cols-12 items-start gap-8 lg:gap-16 py-15 lg:py-30 px-10 lg:px-20">
         <div className="col-span-12 lg:col-span-4">
           <div className="card_1">
             <span>Overall Rating</span>
@@ -48,7 +48,7 @@ const Testimonials = () => {
                   className="flex items-center justify-between gap-3"
                 >
                   <p className="mb-3">{item.label}</p>
-                  <div className="barline flex-1 h-2 bg-fourth rounded-sm w-45 overflow-hidden">
+                  <div className="barline flex-1 h-2 bg-fourth rounded-sm min-w-0 overflow-hidden">
                     <div
                       className="progress h-full bg-primary"
                       style={{ width: `${item.percentage}%` }}
@@ -76,7 +76,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="col-span-12 lg:col-span-8">
-          <div className="grid grid-cols-12 bg-fifth rounded-3xl p-5 lg:p-10 justify-center items-center gap-10">
+          <div className="grid grid-cols-12 min-w-0 bg-fifth rounded-3xl p-5 lg:p-10 justify-center items-center gap-5 lg:gap-10">
             <div className="col-span-12 lg:col-span-4">
               <img
                 className="max-w-full h-auto rounded-full"

@@ -88,3 +88,11 @@ body {
         @apply font-semibold text-sm text-primary
     }
 }
+
+.labelclass {
+    @apply font-semibold text-sm uppercase text-primary;
+}
+
+.inputclass {
+    @apply w-full rounded-lg mt-2 border border-[#e5e1d8] py-3.5 px-4 focus:outline-primary;
+}
