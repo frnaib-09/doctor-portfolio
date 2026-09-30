@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const NavMiddle = ({className}) => {
+const NavMiddle = ({className, children}) => {
   const navItems = [
     { title: "Home", url: "/" },
     { title: "About", url: "/about" },
@@ -18,7 +18,7 @@ const NavMiddle = ({className}) => {
             <NavLink
               to={item.url}
               className={({ isActive }) =>
-                `relative block whitespace-nowrap font-primary font-medium text-base text-primary
+                `relative inline-block whitespace-nowrap font-primary font-medium text-base text-primary
                 after:absolute after:content-[''] after:h-0.75
                 after:-bottom-2 after:left-1/2 after:-translate-x-1/2
                 after:bg-primary duration-150 after:duration-150 ease-in-out
@@ -34,6 +34,7 @@ const NavMiddle = ({className}) => {
           </li>
         ))}
       </ul>
+      {children}
     </div>
   )
 }

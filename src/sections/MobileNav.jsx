@@ -3,6 +3,7 @@ import NavLeft from "../components/NavLeft";
 import { HiMenuAlt3 } from "react-icons/hi";
 import NavMiddle from "../components/NavMiddle";
 import { RxCross1 } from "react-icons/rx";
+import NavEnd from "../components/NavEnd";
 
 const MobileNav = ({ className }) => {
   const [open, setOpen] = useState(false);
@@ -35,8 +36,8 @@ const MobileNav = ({ className }) => {
         className={`offcanvas fixed inset-0 w-full h-full ${!open ? "bg-transparent pointer-events-none" : "bg-gray-700/70"}`}
       >
         <NavMiddle
-          className={`bg-white w-[80%] max-w-[320px] h-full absolute right-0 top-0 p-7 sm:p-10 overflow-y-auto overscroll-contain ${!open ? "scale-x-0" : "scale-x-100"} origin-center duration-300 transform transition-transform`}
-        ></NavMiddle>
+          className={`bg-white w-[80%] max-w-[320px] h-full absolute right-0 top-0 p-7 sm:p-10 overflow-y-auto overscroll-contain ${!open ? "translate-x-100" : "translate-x-0"} origin-center duration-300 transform transition-transform`}
+        ><NavEnd /></NavMiddle>
         <button
           type="button"
           aria-label="Close menu"
