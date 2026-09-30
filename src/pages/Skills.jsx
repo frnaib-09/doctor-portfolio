@@ -13,7 +13,7 @@ const Skills = () => {
       <Navbar className="hidden lg:flex" />
       <MobileNav className="flex lg:hidden" />
       <Heading
-        className="mt-25 py-12 px-20 font-secondary font-bold text-[42px]"
+        className="page-head"
         headline={"Skills & Certifications"}
       />
       <Specialities />

@@ -11,14 +11,14 @@ const NavMiddle = ({className}) => {
   ]
 
   return (
-    <div className={`${className}`}>
-      <ul className="flex flex-col lg:flex-row gap-10">
+    <div className={`${className ?? ''}`}>
+      <ul className="flex flex-col lg:flex-row gap-6 xl:gap-8">
         {navItems.map((item, index) => (
-          <li key={index}>
+          <li key={index} className="shrink-0">
             <NavLink
               to={item.url}
               className={({ isActive }) =>
-                `relative font-primary font-medium text-base text-primary
+                `relative block whitespace-nowrap font-primary font-medium text-base text-primary
                 after:absolute after:content-[''] after:h-0.75
                 after:-bottom-2 after:left-1/2 after:-translate-x-1/2
                 after:bg-primary duration-150 after:duration-150 ease-in-out

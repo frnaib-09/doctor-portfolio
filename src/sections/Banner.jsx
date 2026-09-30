@@ -5,9 +5,9 @@ import { LuPhone } from "react-icons/lu";
 
 const Banner = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-fifth">
-      <div className="mt-25">
-        <div className="absolute inset-0 z-0 min-w-full min-h-full">
+    <section className="relative w-full max-w-full min-h-screen overflow-hidden bg-fifth">
+      <div className="h-full w-full max-w-full pt-25 pb-10 lg:pb-0">
+        <div className="absolute inset-0 z-0 w-full h-full">
           <WebThreads
             color1="#6B6258"
             color2="#292524"
@@ -32,13 +32,13 @@ const Banner = () => {
             mouseStrength={1}
           />
         </div>
-        <div className="banner relative z-10 h-full flex items-center justify-center pointer-events-none">
-          <div className="grid grid-cols-12 items-center justify-between w-full h-screen mx-auto">
-            <div className="col-span-12 lg:col-span-6 px-4 lg:px-20 order-2 lg:order-1">
-              <h6 className="font-primary font-semibold text-sm uppercase text-primary ps-4 mb-4 lg:mb-9 bg-fourth py-1.5 px-4 rounded-[100px] inline-flex">
+        <div className="banner relative z-10 w-full max-w-full h-full flex items-center justify-center pointer-events-none">
+          <div className="section-x grid grid-cols-12 items-center justify-between w-full max-w-full mx-auto min-h-[calc(100svh-6.25rem)] lg:min-h-[calc(100svh-6.25rem)]">
+            <div className="col-span-12 lg:col-span-6 order-2 lg:order-1">
+              <h6 className="font-primary font-semibold text-xs sm:text-sm uppercase text-primary mb-4 lg:mb-9 bg-fourth py-1.5 px-4 rounded-[100px] inline-flex max-w-full">
                 Expert Cardiovascular Care
               </h6>
-              <h1 className="font-secondary font-normal text-3xl lg:text-6xl leading-[115%] mb-4">
+              <h1 className="font-secondary font-normal text-[28px] sm:text-4xl lg:text-6xl leading-[115%] mb-4 text-balance">
                 Compassionate Cardiology, Exceptional Care
               </h1>
               <p className="font-primary font-normal text-base leading-[160%] text-third mb-8">
@@ -47,15 +47,15 @@ const Banner = () => {
                 earum libero voluptatem aliquam odit, eius, nobis similique
                 architecto deleniti! Eum, magni amet.
               </p>
-              <div className="btns lg:flex gap-4 items-center">
+              <div className="btns flex flex-col sm:flex-row flex-wrap gap-4 items-center">
                 <a
-                  className="primary_btn pointer-events-auto mb-3 lg:mb-0"
+                  className="primary_btn pointer-events-auto"
                   href="#"
                 >
                   Schedule a Consultation <FaArrowRight />
                 </a>
                 <a
-                  className="secondary_btn"
+                  className="secondary_btn pointer-events-auto self-start"
                   href="#"
                 >
                   <LuPhone />
@@ -67,7 +67,7 @@ const Banner = () => {
               <img
                 src="/images/dr.avif"
                 alt=""
-                className="w-[70%] h-auto rounded-tl-[30px] lg:rounded-tl-[100px] rounded-br-[30px] lg:rounded-br-[100px]"
+                className="w-[70%] sm:w-[60%] lg:w-[75%] max-w-full h-auto rounded-tl-[30px] lg:rounded-tl-[100px] rounded-br-[30px] lg:rounded-br-[100px]"
               />
             </div>
           </div>

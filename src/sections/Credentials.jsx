@@ -4,7 +4,7 @@ import CertCard from '../components/CertCard';
 
 const Credentials = () => {
   return (
-    <div className='py-15 lg:py-30 px-10 lg:px-20'>
+    <div className='section-y section-x'>
       <Head
         className="mb-18 text-center"
         headtitle={"credentials"}
@@ -13,7 +13,7 @@ const Credentials = () => {
           "Demonstrating certified clinical competence across core disciplines of internal medicine and cardiology."
         }
       />
-      <div className="grid grid-cols-12 gap-6">
+      <div className="grid grid-cols-12 gap-4 sm:gap-6">
           <CertCard 
           year={"2015"} 
           certificate={"Certificate #364812"} 

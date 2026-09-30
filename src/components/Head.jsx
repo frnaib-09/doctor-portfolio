@@ -7,7 +7,7 @@ const Head = ({headtitle, headexp, pragraph, className}) => {
       <h1 className="head_exp">
         {headexp}
       </h1>
-      <p className='head_pragraph'>{pragraph}</p>
+      {pragraph && <p className='head_pragraph'>{pragraph}</p>}
     </div>
   );
 }

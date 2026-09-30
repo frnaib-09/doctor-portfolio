@@ -4,7 +4,7 @@ import ConfPlate from '../components/ConfPlate'
 
 const Learning = () => {
   return (
-    <div className="py-15 lg:py-30 px-10 lg:px-20 bg-fifth">
+    <div className="section-y section-x bg-fifth">
       <Head
         className="mb-18 text-center"
         headtitle={"Continuous Learning"}
@@ -13,7 +13,7 @@ const Learning = () => {
           "Active participant and speaker in global cardiovascular assemblies, driving continuous research integration."
         }
       />
-      <div className="conferenceCards py-3 px-2">
+      <div className="conferenceCards py-3 px-0 sm:px-2">
         <ConfPlate
           graduation={"November 2025  \u2022  Chicago, IL"}
           inst={"American Heart Association (AHA) Scientific Sessions 2025"}

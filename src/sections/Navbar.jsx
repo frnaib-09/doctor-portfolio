@@ -5,7 +5,7 @@ import NavEnd from '../components/NavEnd'
 
 const Navbar = ({className}) => {
   return (
-    <nav className={`flex items-center justify-between py-2 lg:py-6.25 px-10 lg:px-20 bg-secondary fixed w-full top-0 left-0 border-b border-[#e5e1d8] z-50 ${className}`}>
+    <nav className={`navbar-x fixed inset-x-0 top-0 z-50 flex items-center justify-between gap-4 py-2 lg:py-6.25 bg-secondary border-b border-[#e5e1d8] ${className ?? ''}`}>
       <NavLeft />
       <NavMiddle />
       <NavEnd />

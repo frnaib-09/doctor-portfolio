@@ -21,13 +21,13 @@ const ContactPage = () => {
       <Navbar className="hidden lg:flex" />
       <MobileNav className="flex lg:hidden" />
       <Heading
-        className="mt-25 py-12 px-20 font-secondary font-bold text-[42px]"
+        className="page-head"
         headline={"Location & Contact"}
       />
       <Contact className={`bg-secondary`} />
-      <div className="grid grid-cols-12 py-15 lg:py-30 px-10 lg:px-20 gap-8 lg:gap-16">
+      <div className="section-y section-x grid grid-cols-12 gap-4 sm:gap-6 lg:gap-16">
         <div className="col-span-12 lg:col-span-4">
-          <div className="officeHours border border-[#e5e1d8] rounded-2xl p-4 lg:p-8">
+          <div className="officeHours w-full max-w-full border border-[#e5e1d8] rounded-2xl p-4 sm:p-6 lg:p-8">
             <h2 className="font-secondary font-bold text-2xl text-primary">
               Office Hours
             </h2>
@@ -38,13 +38,13 @@ const ContactPage = () => {
               <div className="full" 
                   key={index}>
                 <div
-                  className="flex justify-between items-center mt-6"
+                  className="flex flex-wrap justify-between items-center gap-x-3 gap-y-1 mt-6"
                 >
                   <h6 className="font-semibold text-sm text-primary">
                     {item.day}
                   </h6>
                   <p
-                    className={` text-sm ${item.time === "Closed" ? "text-[#d9534f] font-semibold" : "text-third font-normal"}`}
+                    className={`shrink-0 text-sm ${item.time === "Closed" ? "text-[#d9534f] font-semibold" : "text-third font-normal"}`}
                   >
                     {item.time}
                   </p>
@@ -54,22 +54,22 @@ const ContactPage = () => {
                 />
               </div>
             ))}
-            <p className="p-2 lg:p-4 bg-[#fdf7f7] mt-6 border border-[#f5c6cb] rounded-lg font-normal text-sm leading-[150%] text-[#721c24]">
+            <p className="p-3 sm:p-4 bg-[#fdf7f7] mt-6 border border-[#f5c6cb] rounded-lg font-normal text-sm leading-[150%] text-[#721c24]">
               Established patients have access to our physician call-line 24/7.
               In clinical emergencies, dial 911 immediately.
             </p>
           </div>
         </div>
         <div className="col-span-12 lg:col-span-8">
-          <form action="" className='border border-[#e5e1d8] rounded-3xl p-5 lg:p-10'>
-            <h1 className='font-secondary font-bold text-[32px] text-primary'>Requst a Consultation</h1>
+          <form action="" className='w-full max-w-full border border-[#e5e1d8] rounded-3xl p-5 sm:p-8 lg:p-10'>
+            <h1 className='font-secondary font-bold text-2xl sm:text-[32px] text-primary'>Requst a Consultation</h1>
             <p className='font-normal text-base text-third mt-2'>Submit the encrypted security form below and our triage coordinator will reach out.</p>
-            <div className="namebox mt-8">
+            <div className="namebox mt-6 sm:mt-8">
               <label htmlFor="name" className='labelclass'>Your Name</label>
               <input type="text" name='name' id='name' placeholder='e.g. John Doe' className='inputclass' />
             </div>
             <div className="contbox mt-5">
-              <div className="grid grid-cols-12 gap-5">
+              <div className="grid grid-cols-12 gap-4 sm:gap-5">
                 <div className="col-span-12 lg:col-span-6">
                   <label htmlFor="email" className='labelclass'>email address</label>
                   <input type="email" name='email' id='email' placeholder='arthur@example.com' className='inputclass'  />

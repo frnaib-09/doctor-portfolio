@@ -9,18 +9,18 @@ import { SlEnergy } from "react-icons/sl";
 
 const Specialities = () => {
   return (
-    <div className="py-15 lg:py-30 px-10 lg:px-20 bg-fifth">
+    <div className="section-y section-x bg-fifth">
       <h6 className="head_title">clinical specialities</h6>
-      <div className="flex justify-between items-end">
-        <h1 className="head_exp mt-4">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-6">
+        <h1 className="head_exp">
           Comprehensive Cardiovascular <br /> Specialties
         </h1>
-        <a className="primary_btn" href="#">
+        <a className="primary_btn self-start sm:self-auto shrink-0" href="#">
           View All Services
         </a>
       </div>
-      <div className="cards mt-14">
-        <div className="grid grid-cols-12 gap-6">
+      <div className="cards mt-10 sm:mt-14">
+        <div className="grid grid-cols-12 gap-4 sm:gap-6">
           <Sklillcard
             icon={<TbActivityHeartbeat />}
             title={"Interventional Cardiology"}

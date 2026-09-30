@@ -4,7 +4,7 @@ import NetCard from '../components/NetCard';
 
 const Network = () => {
   return (
-    <div className="py-15 lg:py-30 px-10 lg:px-20 text-center">
+    <div className="section-y section-x text-center">
       <Head
         headtitle={"professional network"}
         headexp={"Professional Memberships & Affiliations"}
@@ -12,7 +12,7 @@ const Network = () => {
           "Actively contributing to global standards of clinical cardiac care through national and international medical societies."
         }
       />
-      <div className="grid grid-cols-12 mt-14 gap-6">
+      <div className="grid grid-cols-12 mt-10 sm:mt-14 gap-4 sm:gap-6">
         <NetCard
           memship={"FACC (Fellow)"}
           company={"American College of Cardiology"}

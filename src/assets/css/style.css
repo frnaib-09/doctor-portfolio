@@ -12,40 +12,112 @@
     --color-fifth: #FAF7F2;
 }
 
-body {
-    @apply font-primary;
+/* ============================================================
+   Global responsive guards — no horizontal scroll, ever.
+   ============================================================ */
+
+html {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
 }
 
+body {
+    @apply font-primary;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+#root {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+/* Grid & flex children must be allowed to shrink below their
+   intrinsic content width, otherwise wide children (maps, long
+   words, nowrap rows) force the whole page wider than the viewport. */
+.grid > *,
+.flex > * {
+    min-width: 0;
+}
+
+/* A single unbreakable token can never push a container wider. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+label,
+td,
+th {
+    overflow-wrap: break-word;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+    max-width: 100%;
+}
+
+/* ============================================================
+   Layout helpers
+   ============================================================ */
+
+.section-x {
+    @apply w-full max-w-full px-5 sm:px-8 lg:px-20;
+}
+
+.section-y {
+    @apply w-full max-w-full py-10 sm:py-15 lg:py-30;
+}
+
+.navbar-x {
+    @apply w-full max-w-full px-5 sm:px-8 lg:px-10 xl:px-20;
+}
+
+.page-head {
+    @apply w-full max-w-full mt-25 py-8 sm:py-12 px-5 sm:px-10 lg:px-20 font-secondary font-bold text-[28px] sm:text-4xl lg:text-[42px];
+}
+
+/* ============================================================
+   Components
+   ============================================================ */
+
 .primary_btn {
-    @apply flex lg:inline-flex items-center gap-2 py-3.5 px-7 bg-primary rounded-[30px] font-semibold text-sm text-secondary hover:bg-transparent border-2 border-transparent hover:border-primary hover:text-primary duration-150 ease-in;
+    @apply flex w-full sm:w-auto max-w-full items-center justify-center text-center gap-2 py-3.5 px-5 sm:px-7 bg-primary rounded-[30px] font-semibold text-sm text-secondary hover:bg-transparent border-2 border-transparent hover:border-primary hover:text-primary duration-150 ease-in;
 }
 
 .secondary_btn {
-    @apply relative inline-flex items-center gap-2 font-medium text-base text-primary hover:font-semibold after:absolute after:content-[''] after:h-0.75 after:w-0 hover:after:w-full after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-150 after:ease-in-out pointer-events-auto;
+    @apply relative inline-flex max-w-full items-center justify-center gap-2 px-1 font-medium text-base text-primary hover:font-semibold after:absolute after:content-[''] after:h-0.75 after:w-0 hover:after:w-full after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-150 after:ease-in-out pointer-events-auto;
 }
 
 .SummaryCard {
-    @apply text-center;
+    @apply w-full max-w-full text-center;
 
     h1 {
-        @apply font-secondary font-bold text-[40px] text-primary mb-2;
+        @apply font-secondary font-bold text-[28px] sm:text-[40px] text-primary mb-1 sm:mb-2;
     }
     
     p {
-        @apply font-semibold text-sm uppercase text-third;
+        @apply font-semibold text-xs sm:text-sm uppercase text-third;
     }
 }
 
 .head_title {
-    @apply bg-fourth py-1.5 px-4 rounded-[100px] inline font-semibold text-xs uppercase text-primary;
+    @apply bg-fourth py-1.5 px-4 rounded-[100px] inline max-w-full font-semibold text-xs uppercase text-primary;
 }
 
 .head_exp {
-    @apply mt-8 font-secondary font-normal text-4xl leading-[130%] text-primary;
+    @apply mt-6 sm:mt-8 max-w-full font-secondary font-normal text-[26px] sm:text-[32px] lg:text-4xl leading-[130%] text-primary;
 }
 
 .head_pragraph {
-    @apply mt-4 font-normal text-base text-third;
+    @apply mt-3 sm:mt-4 max-w-full font-normal text-base text-third;
 }
 
 .shade:hover {
@@ -53,14 +125,14 @@ body {
 }
 
 .shortInt {
-    @apply p-6 bg-fifth rounded-2xl mt-6;
+    @apply w-full max-w-full p-5 sm:p-6 bg-fifth rounded-2xl mt-6;
 
     h3 {
-        @apply font-secondary font-bold text-[22px] text-primary mb-2;
+        @apply font-secondary font-bold text-xl sm:text-[22px] text-primary mb-2;
     }
 
     span {
-        @apply font-semibold text-sm uppercase text-third mb-2;
+        @apply block font-semibold text-xs sm:text-sm uppercase text-third mb-2;
     }
 
     p {
@@ -69,17 +141,17 @@ body {
 }
 
 .card_1 {
-    @apply rounded-3xl p-4 lg:p-8 bg-fifth;
+    @apply w-full max-w-full rounded-3xl p-4 sm:p-6 lg:p-8 bg-fifth;
 
     span {
-        @apply font-bold text-sm uppercase text-third;
+        @apply font-bold text-xs sm:text-sm uppercase text-third;
     }
 
     h2 {
-        @apply mt-2 font-secondary font-bold text-[56px] text-primary;
+        @apply mt-2 font-secondary font-bold text-[40px] sm:text-[56px] text-primary;
 
         small {
-            @apply font-primary font-semibold text-xl text-third
+            @apply font-primary font-semibold text-lg sm:text-xl text-third
         }
 
     }
@@ -90,9 +162,9 @@ body {
 }
 
 .labelclass {
-    @apply font-semibold text-sm uppercase text-primary;
+    @apply block font-semibold text-sm uppercase text-primary;
 }
 
 .inputclass {
-    @apply w-full rounded-lg mt-2 border border-[#e5e1d8] py-3.5 px-4 focus:outline-primary;
+    @apply w-full max-w-full min-w-0 rounded-lg mt-2 border border-[#e5e1d8] py-3.5 px-4 focus:outline-primary;
 }

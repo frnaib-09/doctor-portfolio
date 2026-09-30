@@ -20,10 +20,10 @@ const Testimonials = () => {
       <Navbar className="hidden lg:flex" />
       <MobileNav className="flex lg:hidden" />
       <Heading
-        className="mt-25 py-12 px-20 font-secondary font-bold text-[42px]"
+        className="page-head"
         headline={"Patient Testimonials"}
       />
-      <div className="grid grid-cols-12 items-start gap-8 lg:gap-16 py-15 lg:py-30 px-10 lg:px-20">
+      <div className="section-y section-x grid grid-cols-12 items-start gap-4 sm:gap-6 lg:gap-16">
         <div className="col-span-12 lg:col-span-4">
           <div className="card_1">
             <span>Overall Rating</span>
@@ -59,7 +59,7 @@ const Testimonials = () => {
               ))}
             </div>
           </div>
-          <div className="card_2 p-4 lg:p-8 rounded-3xl bg-primary mt-10">
+          <div className="card_2 w-full max-w-full p-4 sm:p-6 lg:p-8 rounded-3xl bg-primary mt-10">
             <h3 className="font-secondary font-bold text-2xl text-secondary mb-3">
               Share Your Experience
             </h3>
@@ -76,10 +76,10 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="col-span-12 lg:col-span-8">
-          <div className="grid grid-cols-12 min-w-0 bg-fifth rounded-3xl p-5 lg:p-10 justify-center items-center gap-5 lg:gap-10">
+          <div className="grid grid-cols-12 min-w-0 bg-fifth rounded-3xl p-5 lg:p-10 justify-center items-center gap-4 sm:gap-5 lg:gap-10">
             <div className="col-span-12 lg:col-span-4">
               <img
-                className="max-w-full h-auto rounded-full"
+                className="w-full max-w-[200px] lg:max-w-full mx-auto h-auto rounded-full"
                 src="/images/patient.jpg"
                 alt=""
               />
@@ -101,10 +101,10 @@ const Testimonials = () => {
               </p>
             </div>
           </div>
-          <h1 className="mt-16 mb-20 font-secondary font-bold text-[32px] text-primary">
+          <h1 className="mt-10 sm:mt-14 mb-10 sm:mb-16 font-secondary font-bold text-2xl sm:text-[32px] text-primary">
             Clinical Patient Stories
           </h1>
-          <div className="grid grid-cols-12 gap-6 py">
+          <div className="grid grid-cols-12 gap-4 sm:gap-6">
             <Review
               className={`col-span-12 lg:col-span-6`}
               cmt={

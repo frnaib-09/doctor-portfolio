@@ -2,17 +2,15 @@ import React from 'react'
 
 const Contcard = ({icon, adTag, detail}) => {
   return (
-    <div className="grid grid-cols-12 gap-2 items-center mb-6">
-      <div className="col-span-3 lg:col-span-1">
-        <span className="bg-secondary text-2xl rounded-[20px] w-10 h-10 flex justify-center items-center">
-          {icon}
-        </span>
-      </div>
-      <div className="col-span-9 lg:col-span-11">
-        <h5 className="font-primary font-semibold text-lg text-primary mb-1">
+    <div className="flex items-start gap-3 sm:gap-4 mb-5 sm:mb-6">
+      <span className="shrink-0 bg-secondary text-2xl rounded-[20px] w-10 h-10 flex justify-center items-center">
+        {icon}
+      </span>
+      <div className="min-w-0">
+        <h5 className="font-primary font-semibold text-base sm:text-lg text-primary mb-1">
           {adTag}
         </h5>
-        <p className='font-primary font-normal text-base text-third'>{detail}</p>
+        <p className='font-primary font-normal text-sm sm:text-base text-third'>{detail}</p>
       </div>
     </div>
   );

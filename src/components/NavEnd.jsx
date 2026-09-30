@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const NavEnd = () => {
   return (
-    <div className='hidden lg:block'>
+    <div className='hidden lg:block shrink-0'>
       <a
         className="primary_btn" href="#">Book Appointment <FaArrowRight /></a>
     </div>

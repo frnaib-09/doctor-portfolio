@@ -13,7 +13,7 @@ const About = () => {
     <div>
       <Navbar className="hidden lg:flex" />
       <MobileNav className="flex lg:hidden" />
-      <Heading className="mt-25 py-12 px-20 font-secondary font-bold text-[42px]" headline={"About Me"} />
+      <Heading className="page-head" headline={"About Me"} />
       <AboutSection
         headtitle={"Biography"}
         headexp={"A Dedicated Life's Work Focused on Nurturing Heart Health"}
