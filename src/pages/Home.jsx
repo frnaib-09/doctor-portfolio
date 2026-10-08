@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import Navbar from '../sections/Navbar'
 import Banner from '../sections/Banner'
 import MobileNav  from '../sections/MobileNav'
@@ -8,8 +9,16 @@ import Specialities from '../sections/Specialities'
 import Reviews from '../sections/Reviews'
 import Contact from '../sections/Contact'
 import Footer from '../sections/Footer'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div>
       <Navbar className="hidden lg:flex" />

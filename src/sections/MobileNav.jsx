@@ -19,9 +19,12 @@ const MobileNav = ({ className }) => {
 
   return (
     <div
-      className={`fixed inset-x-0 top-0 z-50 w-full max-w-full bg-secondary py-4 px-4 sm:px-6 ${className ?? ''}`}
+      className={`fixed inset-x-0 top-0 z-50 w-full max-w-full bg-secondary py-4 px-4 sm:px-6 ${className ?? ""}`}
     >
-      <div className="grid grid-cols-12 w-full max-w-full items-center">
+      <div
+        data-aos="fade-down"
+        className="grid grid-cols-12 w-full max-w-full items-center"
+      >
         <NavLeft className="col-span-9"></NavLeft>
         <button
           type="button"
@@ -37,7 +40,9 @@ const MobileNav = ({ className }) => {
       >
         <NavMiddle
           className={`bg-white w-[80%] max-w-[320px] h-full absolute right-0 top-0 p-7 sm:p-10 overflow-y-auto overscroll-contain ${!open ? "translate-x-100" : "translate-x-0"} origin-center duration-300 transform transition-transform`}
-        ><NavEnd /></NavMiddle>
+        >
+          <NavEnd />
+        </NavMiddle>
         <button
           type="button"
           aria-label="Close menu"

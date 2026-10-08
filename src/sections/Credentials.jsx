@@ -4,7 +4,7 @@ import CertCard from '../components/CertCard';
 
 const Credentials = () => {
   return (
-    <div className='section-y section-x'>
+    <div data-aos="fade-up" className='section-y section-x'>
       <Head
         className="mb-18 text-center"
         headtitle={"credentials"}

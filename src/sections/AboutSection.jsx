@@ -6,7 +6,10 @@ const AboutSection = ({ headtitle="About Me", headexp="Nurturing Heart Health Th
   return (
     <div className="w-full max-w-full">
       <div className="section-y section-x grid grid-cols-12 gap-4 sm:gap-6 lg:gap-12 xl:gap-24 items-center">
-        <div className="lg:col-span-4 col-span-12 flex flex-col justify-center items-center">
+        <div
+          data-aos="fade-up-right"
+          className="lg:col-span-4 col-span-12 flex flex-col justify-center items-center"
+        >
           <img
             src="/images/doc.jpg"
             alt=""
@@ -24,7 +27,7 @@ const AboutSection = ({ headtitle="About Me", headexp="Nurturing Heart Health Th
             </div>
           )}
         </div>
-        <div className="col-span-12 lg:col-span-8">
+        <div data-aos="fade-up-left" className="col-span-12 lg:col-span-8">
           <Head headtitle={headtitle} headexp={headexp} />
           <p className="font-primary font-normal text-base leading-[170%] text-third mb-5 mt-6 sm:mt-8">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
@@ -43,7 +46,7 @@ const AboutSection = ({ headtitle="About Me", headexp="Nurturing Heart Health Th
               Learn More <MdKeyboardArrowRight className="text-lg" />
             </a>
           )}
-          
+
           {showExtra && (
             <div>
               <p className="font-secondary font-normal italic text-lg sm:text-xl leading-[150%] text-primary mt-8 mb-3">

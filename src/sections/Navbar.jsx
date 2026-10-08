@@ -5,7 +5,10 @@ import NavEnd from '../components/NavEnd'
 
 const Navbar = ({className}) => {
   return (
-    <nav className={`navbar-x fixed inset-x-0 top-0 z-50 flex items-center justify-between gap-4 py-2 lg:py-6.25 bg-secondary border-b border-[#e5e1d8] ${className ?? ''}`}>
+    <nav
+      data-aos="fade-down"
+      className={`navbar-x fixed inset-x-0 top-0 z-50 flex items-center justify-between gap-4 py-2 lg:py-6.25 bg-secondary border-b border-[#e5e1d8] ${className ?? ""}`}
+    >
       <NavLeft />
       <NavMiddle />
       <NavEnd />

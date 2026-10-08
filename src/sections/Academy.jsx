@@ -4,7 +4,10 @@ import AcademicCard from '../components/AcademicCard';
 
 const Academy = () => {
   return (
-    <div className="section-y section-x bg-fifth text-center">
+    <div
+      data-aos="fade-up"
+      className="section-y section-x bg-fifth text-center"
+    >
       <Head
         className="mb-18"
         headtitle={"Academic Path"}

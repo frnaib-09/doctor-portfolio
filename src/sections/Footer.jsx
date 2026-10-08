@@ -21,7 +21,7 @@ const Footer = () => {
     },
   ]
   return (
-    <div className="w-full max-w-full pt-10 pb-5 sm:pb-6 lg:pt-20 lg:pb-10 px-5 sm:px-8 lg:px-20 bg-primary">
+    <div data-aos="fade-up" className="w-full max-w-full pt-10 pb-5 sm:pb-6 lg:pt-20 lg:pb-10 px-5 sm:px-8 lg:px-20 bg-primary">
       <div className="grid grid-cols-12 items-center gap-6 sm:gap-8 lg:gap-12 mb-12 lg:mb-16">
         <div className="col-span-12 lg:col-span-6">
           <div className="flex items-center gap-3 mb-5 sm:mb-6">

@@ -6,9 +6,12 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const Contact = ({className}) => {
   return (
-    <div className={`section-y section-x ${className || "bg-fifth"}`}>
+    <div
+      data-aos="fade-up"
+      className={`section-y section-x ${className || "bg-fifth"}`}
+    >
       <div className="grid grid-cols-12 justify-between gap-6 sm:gap-8 lg:gap-8">
-        <div className="col-span-12 lg:col-span-6 left">
+        <div data-aos="fade-right" className="col-span-12 lg:col-span-6 left">
           <h6 className="head_title">Visit Me</h6>
           <h1 className="head_exp mb-4">Heart & Vascular Clinic</h1>
           <p className="font-primary font-normal text-base leading-[160%] text-third mb-8 sm:mb-10">
@@ -33,7 +36,7 @@ const Contact = ({className}) => {
             detail={"contact@drgomezcardiology.com"}
           />
         </div>
-        <div className="col-span-12 lg:col-span-6 right mx-auto w-full max-w-full h-64 sm:h-80 lg:h-[450px] rounded-2xl overflow-hidden border border-[#e5e1d8] bg-fifth">
+        <div data-aos="fade-left" className="col-span-12 lg:col-span-6 right mx-auto w-full max-w-full h-64 sm:h-80 lg:h-112.5 rounded-2xl overflow-hidden border border-[#e5e1d8] bg-fifth">
           <iframe
             className="w-full max-w-full h-full min-w-0 border-0"
             title="Clinic location map"

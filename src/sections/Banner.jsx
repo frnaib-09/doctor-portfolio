@@ -2,6 +2,7 @@ import React from "react";
 import WebThreads from "../components/WebThreads";
 import { FaArrowRight } from "react-icons/fa";
 import { LuPhone } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -34,7 +35,10 @@ const Banner = () => {
         </div>
         <div className="banner relative z-10 w-full max-w-full h-full flex items-center justify-center pointer-events-none">
           <div className="section-x grid grid-cols-12 items-center justify-between w-full max-w-full mx-auto min-h-[calc(100svh-6.25rem)] lg:min-h-[calc(100svh-6.25rem)]">
-            <div className="col-span-12 lg:col-span-6 order-2 lg:order-1">
+            <div
+              data-aos="fade-up-right"
+              className="col-span-12 lg:col-span-6 order-2 lg:order-1"
+            >
               <h6 className="font-primary font-semibold text-xs sm:text-sm uppercase text-primary mb-4 lg:mb-9 bg-fourth py-1.5 px-4 rounded-[100px] inline-flex max-w-full">
                 Expert Cardiovascular Care
               </h6>
@@ -47,13 +51,10 @@ const Banner = () => {
                 earum libero voluptatem aliquam odit, eius, nobis similique
                 architecto deleniti! Eum, magni amet.
               </p>
-              <div className="btns flex flex-col sm:flex-row flex-wrap gap-4 items-center">
-                <a
-                  className="primary_btn pointer-events-auto"
-                  href="#"
-                >
+              <div className="btns flex flex-col lg:flex-row gap-4 items-center">
+                <Link className="primary_btn pointer-events-auto" to="/contact">
                   Schedule a Consultation <FaArrowRight />
-                </a>
+                </Link>
                 <a
                   className="secondary_btn pointer-events-auto self-start"
                   href="#"
@@ -63,7 +64,10 @@ const Banner = () => {
                 </a>
               </div>
             </div>
-            <div className="col-span-12 lg:col-span-6 mb-8 lg:mb-0 flex items-center justify-center order-1 lg:order-2">
+            <div
+              data-aos="fade-up-left"
+              className="col-span-12 lg:col-span-6 mb-8 lg:mb-0 flex items-center justify-center order-1 lg:order-2"
+            >
               <img
                 src="/images/dr.avif"
                 alt=""

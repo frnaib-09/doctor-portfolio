@@ -4,7 +4,7 @@ import NetCard from '../components/NetCard';
 
 const Network = () => {
   return (
-    <div className="section-y section-x text-center">
+    <div data-aos="fade-up" className="section-y section-x text-center">
       <Head
         headtitle={"professional network"}
         headexp={"Professional Memberships & Affiliations"}
