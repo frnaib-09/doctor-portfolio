@@ -1,16 +1,31 @@
-# React + Vite
+# Doctor Portfolio — React Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-page website for a medical professional: profile, services and contact, with smooth scroll animations and a responsive layout.
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+React 19 · Vite · Tailwind CSS · React Router · Motion · AOS · Swiper
 
-## React Compiler
+## Highlights
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Multi-page routing with React Router
+- Scroll and entrance animations (Motion, AOS)
+- Testimonial / gallery sliders with Swiper
+- Fully responsive, Tailwind-based styling
 
-## Expanding the ESLint configuration
+## Run it locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/frnaib-09/doctor-portfolio.git
+cd doctor-portfolio
+npm install
+npm run dev
+```
+
+## Screenshots
+
+_Add a screenshot and a live demo link here._
+
+---
+
+Built by [Foyjur Rafee](https://github.com/frnaib-09) · Available for React and full-stack projects — foyjurrafee99@gmail.com
